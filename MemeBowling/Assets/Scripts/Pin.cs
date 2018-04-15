@@ -16,7 +16,7 @@ public class Pin : MonoBehaviour {
         rigidbody = GetComponent<Rigidbody>();
 
         angels = gameObject.transform.rotation.eulerAngles;
-        print(angels);
+        //print(angels);
         //Invoke("printAngels", 5);
     }
 

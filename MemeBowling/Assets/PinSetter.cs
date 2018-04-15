@@ -8,6 +8,7 @@ public class PinSetter : MonoBehaviour {
     public Text StandingPinsCounter;
     private int numberOfStandingPins;
     private bool ballEnteredBox;
+    public GameObject PinSet;
 
     public float timerCheck = 3f;
     private int tempStandingPins;
@@ -17,13 +18,15 @@ public class PinSetter : MonoBehaviour {
     void Start()
     {
         ball = GameObject.FindObjectOfType<Ball>();
+        //Invoke("raisePins", 5);
+        //Invoke("lowerPins", 9);
     }
 
     // Update is called once per frame
     void Update() {
         if (ballEnteredBox)
         {
-            timer=timer+(1 * Time.deltaTime);
+            timer = timer + (1 * Time.deltaTime);
             if (timer <= timerCheck)
             {
                 if (!(tempStandingPins == countStandingPins()))
@@ -40,6 +43,34 @@ public class PinSetter : MonoBehaviour {
         //timer debug was used this// StandingPinsCounter.text = timer.ToString();
         // print("PINS SATTLED: " + pinsSattled);
     }
+
+    public void raisePins()
+    {
+        foreach (Pin Pinn in GameObject.FindObjectsOfType<Pin>())
+        {
+            if (Pinn.isStillStanding())
+            {
+                Pinn.GetComponent<Rigidbody>().useGravity = false;
+                Pinn.transform.Translate(new Vector3(0, 50, 0), Space.World);
+            }
+        }
+    }
+
+    public void lowerPins()
+    {
+        print("LOWER_STARTED!");
+        foreach (Pin Pinn in GameObject.FindObjectsOfType<Pin>())
+        {
+            if (Pinn.isStillStanding())
+            {
+                Pinn.transform.Translate(new Vector3(0, -49, 0), Space.World);
+                Pinn.GetComponent<Rigidbody>().useGravity = true;
+                print("LOWERDED!");
+            }
+        }
+    }
+
+
     private void PinsHaveSettled()
     {
         StandingPinsCounter.color = Color.green;
