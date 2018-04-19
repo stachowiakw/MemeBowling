@@ -51,6 +51,8 @@ public class PinSetter : MonoBehaviour {
             if (Pinn.isStillStanding())
             {
                 Pinn.GetComponent<Rigidbody>().useGravity = false;
+                Pinn.GetComponent<Rigidbody>().freezeRotation = true;
+                transform.rotation = Quaternion.Euler(0, 0, 0);
                 Pinn.transform.Translate(new Vector3(0, 50, 0), Space.World);
             }
         }
@@ -65,6 +67,7 @@ public class PinSetter : MonoBehaviour {
             {
                 Pinn.transform.Translate(new Vector3(0, -49, 0), Space.World);
                 Pinn.GetComponent<Rigidbody>().useGravity = true;
+                Pinn.GetComponent<Rigidbody>().freezeRotation = false;
                 print("LOWERDED!");
             }
         }
@@ -76,6 +79,7 @@ public class PinSetter : MonoBehaviour {
         StandingPinsCounter.color = Color.green;
         ballEnteredBox = false;
         ball.Restart();
+        timer = 0;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -84,14 +88,6 @@ public class PinSetter : MonoBehaviour {
         {
             ballEnteredBox = true;
             StandingPinsCounter.color = Color.red;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.GetComponentInParent<Pin>())
-        {
-            Destroy(other.gameObject.transform.parent.gameObject);
         }
     }
 
@@ -105,5 +101,13 @@ public class PinSetter : MonoBehaviour {
         }
         StandingPinsCounter.text = numberOfStandingPins.ToString();
         return numberOfStandingPins;
+    }
+
+    public void newPinsSet()
+    {
+        if (numberOfStandingPins == 0)
+        {
+            Instantiate(PinSet);
+        }
     }
 }
