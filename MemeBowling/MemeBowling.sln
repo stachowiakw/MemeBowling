@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeBowling", "Assembly-CSharp.csproj", "{26EA947C-C710-9742-EF53-92988EE56E93}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeBowling", "MemeBowling.csproj", "{AC787FF8-280E-FF7B-6F3C-8B15DBF2E962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeBowling", "Assembly-CSharp-Editor.csproj", "{C6F1099A-831A-875D-EB97-FD94B36B3693}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeBowling.Editor", "MemeBowling.Editor.csproj", "{92B36C7E-8694-4EA6-3E11-8417F04859BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,19 +11,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{26EA947C-C710-9742-EF53-92988EE56E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26EA947C-C710-9742-EF53-92988EE56E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26EA947C-C710-9742-EF53-92988EE56E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26EA947C-C710-9742-EF53-92988EE56E93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C6F1099A-831A-875D-EB97-FD94B36B3693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6F1099A-831A-875D-EB97-FD94B36B3693}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6F1099A-831A-875D-EB97-FD94B36B3693}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6F1099A-831A-875D-EB97-FD94B36B3693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC787FF8-280E-FF7B-6F3C-8B15DBF2E962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC787FF8-280E-FF7B-6F3C-8B15DBF2E962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC787FF8-280E-FF7B-6F3C-8B15DBF2E962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC787FF8-280E-FF7B-6F3C-8B15DBF2E962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92B36C7E-8694-4EA6-3E11-8417F04859BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92B36C7E-8694-4EA6-3E11-8417F04859BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92B36C7E-8694-4EA6-3E11-8417F04859BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92B36C7E-8694-4EA6-3E11-8417F04859BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
