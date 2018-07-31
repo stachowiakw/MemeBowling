@@ -27,7 +27,7 @@ public class ActionMasterTest
     [Test]
     public void T01OneStrikeReturnsEndTurn()
     {
-        Assert.AreEqual (endTurn,actionMaster.Bowl(10));
+        Assert.AreEqual(endTurn, actionMaster.Bowl(10));
     }
 
     [Test]
@@ -52,18 +52,18 @@ public class ActionMasterTest
     [Test]
     public void T05CheckResetAtStrikeInLastFrame()
     {
-        int[] rolls = {1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1 };
+        int[] rolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
         foreach (int roll in rolls)
         {
             actionMaster.Bowl(roll);
         }
-        Assert.AreEqual(reset, actionMaster.Bowl (10)); 
+        Assert.AreEqual(reset, actionMaster.Bowl(10));
     }
 
     [Test]
     public void T06CheckResetAtStrikeInLastFrame()
     {
-        int[] rolls = {1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1 };
+        int[] rolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
         foreach (int roll in rolls)
         {
             actionMaster.Bowl(roll);
@@ -75,7 +75,7 @@ public class ActionMasterTest
     [Test]
     public void T07YoutubeRollsEndInEndGames()
     {
-        int[] rolls = {1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 9,1 };
+        int[] rolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1 };
         foreach (int roll in rolls)
         {
             actionMaster.Bowl(roll);
@@ -92,5 +92,40 @@ public class ActionMasterTest
             actionMaster.Bowl(roll);
         }
         Assert.AreEqual(endgame, actionMaster.Bowl(8));
+    }
+
+    [Test]
+    public void T09Bowl20tidyadterStrike()
+    {
+        int[] rolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10 };
+        foreach (int roll in rolls)
+        {
+            actionMaster.Bowl(roll);
+        }
+        Assert.AreEqual(tidy, actionMaster.Bowl(8));
+    }
+
+    [Test]
+    public void T10KD10PinsOnASecondBowlInAFrame()
+    {
+        int[] rolls = { 0, 10, 1 };
+        foreach (int roll in rolls)
+        {
+            actionMaster.Bowl(roll);
+        }
+        Assert.AreEqual(endTurn, actionMaster.Bowl(5));
+    }
+
+    [Test]
+    public void T12Dondi10thFrameTurkey()
+    {
+        int[] rolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+        foreach (int roll in rolls)
+        {
+            actionMaster.Bowl(roll);
+        }
+        Assert.AreEqual(reset, actionMaster.Bowl(10));
+        Assert.AreEqual(reset, actionMaster.Bowl(10));
+        //Assert.AreEqual(endgame, actionMaster.Bowl(10));
     }
 }

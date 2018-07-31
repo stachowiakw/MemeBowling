@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActionMaster : MonoBehaviour {
     private int[] ResultOfBowl = new int[21];
-    private int bowlIndex = 1;
+    public int bowlIndex = 1;
 
     public enum Action {Tidy, Reset, EndTurn, EndGame};
     
@@ -21,6 +21,21 @@ public class ActionMaster : MonoBehaviour {
         if (pins == 11)
         {
             return Action.Reset;
+        }
+
+        if (bowlIndex >= 20 && (Bowl21Awarded()) && (ResultOfBowl[19 - 1] == 10))
+        {
+            if (pins == 10)
+            {
+                bowlIndex += 1;
+                return Action.Reset;
+
+            }
+            else
+            {
+                bowlIndex += 1;
+                return Action.Tidy;
+            }
         }
 
         if (bowlIndex>=19 && Bowl21Awarded())
@@ -41,7 +56,10 @@ public class ActionMaster : MonoBehaviour {
 
         if (pins == 10)
         {
-            bowlIndex += 2;
+            if (bowlIndex % 2 != 0)
+            { bowlIndex += 2; }
+            else
+            { bowlIndex += 1; }
             return Action.EndTurn;
         }
 
@@ -50,6 +68,7 @@ public class ActionMaster : MonoBehaviour {
             bowlIndex += 1;
             return Action.Tidy;
         }
+
         else if (bowlIndex % 2 == 0)
         {
             bowlIndex += 1;
