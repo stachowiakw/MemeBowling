@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 1680
-    height: 967
+    x: 24
+    y: 61
+    width: 1344
+    height: 757
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 9}
-  m_MinSize: {x: 950, y: 663}
+  m_MinSize: {x: 950, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -37,11 +37,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 413
-    width: 1025
-    height: 152
-  m_MinSize: {x: 104, y: 121}
-  m_MaxSize: {x: 4004, y: 4021}
+    y: 315
+    width: 820
+    height: 121
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -63,14 +63,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 273
+    x: 218
     y: 0
-    width: 1025
-    height: 565
-  m_MinSize: {x: 204, y: 342}
-  m_MaxSize: {x: 4004, y: 8042}
+    width: 820
+    height: 436
+  m_MinSize: {x: 104, y: 221}
+  m_MaxSize: {x: 4004, y: 8021}
   vertical: 1
-  controlID: 57
+  controlID: 14
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -87,16 +87,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1025
-    height: 413
-  m_MinSize: {x: 204, y: 221}
+    width: 820
+    height: 315
+  m_MinSize: {x: 104, y: 121}
   m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 21}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -115,12 +115,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1680
-    height: 917
-  m_MinSize: {x: 508, y: 613}
-  m_MaxSize: {x: 14004, y: 18063}
+    width: 1344
+    height: 707
+  m_MinSize: {x: 583, y: 342}
+  m_MaxSize: {x: 12008, y: 12042}
   vertical: 0
-  controlID: 149
+  controlID: 109
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,18 +135,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1298
+    x: 1038
     y: 0
-    width: 382
-    height: 917
-  m_MinSize: {x: 102, y: 121}
+    width: 306
+    height: 707
+  m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,8 +163,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 273
-    height: 565
+    width: 218
+    height: 436
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
@@ -187,18 +187,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 565
-    width: 1298
-    height: 352
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 18}
+    y: 436
+    width: 1038
+    height: 271
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 18}
   - {fileID: 16}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,9 +218,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1680
-    height: 967
-  m_MinSize: {x: 950, y: 300}
+    width: 1344
+    height: 757
+  m_MinSize: {x: 950, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &10
 MonoBehaviour:
@@ -238,7 +238,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1680
+    width: 1344
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 947
-    width: 1680
+    y: 737
+    width: 1344
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -281,12 +281,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1298
-    height: 917
-  m_MinSize: {x: 406, y: 613}
-  m_MaxSize: {x: 10002, y: 18063}
+    width: 1038
+    height: 707
+  m_MinSize: {x: 306, y: 342}
+  m_MaxSize: {x: 8006, y: 12042}
   vertical: 1
-  controlID: 55
+  controlID: 110
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -305,12 +305,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1298
-    height: 565
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
+    width: 1038
+    height: 436
+  m_MinSize: {x: 306, y: 221}
+  m_MaxSize: {x: 8006, y: 8021}
   vertical: 0
-  controlID: 56
+  controlID: 13
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,10 +330,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1300
-    y: 92
-    width: 380
-    height: 896
+    x: 1064
+    y: 110
+    width: 304
+    height: 686
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
@@ -400,9 +400,9 @@ MonoBehaviour:
     - id: '[F:/repos/MemeBowlingSVN/MemeBowling/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
       name: Assembly-CSharp-Editor.dll
       fullName: F:/repos/MemeBowlingSVN/MemeBowling/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-      resultStatus: 2
-      duration: 0.3076908
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.3296978
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -412,9 +412,9 @@ MonoBehaviour:
     - id: '[Assembly-CSharp-Editor][ActionMasterTest][suite]'
       name: ActionMasterTest
       fullName: ActionMasterTest
-      resultStatus: 2
-      duration: 0.2606886
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.2852658
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -425,7 +425,7 @@ MonoBehaviour:
       name: PassingTest
       fullName: ActionMasterTest.PassingTest
       resultStatus: 1
-      duration: 0.0246579
+      duration: 0.0238797
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -439,7 +439,7 @@ MonoBehaviour:
       name: T01OneStrikeReturnsEndTurn
       fullName: ActionMasterTest.T01OneStrikeReturnsEndTurn
       resultStatus: 1
-      duration: 0.012997
+      duration: 0.0110137
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -453,7 +453,7 @@ MonoBehaviour:
       name: T02Bowl8ReturnsTidy
       fullName: ActionMasterTest.T02Bowl8ReturnsTidy
       resultStatus: 1
-      duration: 0.0090533
+      duration: 0.0091093
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -467,7 +467,7 @@ MonoBehaviour:
       name: T03EloEloMakrelo
       fullName: ActionMasterTest.T03EloEloMakrelo
       resultStatus: 1
-      duration: 0.0129909
+      duration: 0.0128168
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -481,7 +481,7 @@ MonoBehaviour:
       name: T04Bowl28SpareReturnsEndTurn
       fullName: ActionMasterTest.T04Bowl28SpareReturnsEndTurn
       resultStatus: 1
-      duration: 0.0091392
+      duration: 0.01315
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -495,7 +495,7 @@ MonoBehaviour:
       name: T05CheckResetAtStrikeInLastFrame
       fullName: ActionMasterTest.T05CheckResetAtStrikeInLastFrame
       resultStatus: 1
-      duration: 0.0094114
+      duration: 0.0090753
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -509,7 +509,7 @@ MonoBehaviour:
       name: T06CheckResetAtStrikeInLastFrame
       fullName: ActionMasterTest.T06CheckResetAtStrikeInLastFrame
       resultStatus: 1
-      duration: 0.0114032
+      duration: 0.010174
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -523,7 +523,7 @@ MonoBehaviour:
       name: T07YoutubeRollsEndInEndGames
       fullName: ActionMasterTest.T07YoutubeRollsEndInEndGames
       resultStatus: 1
-      duration: 0.0097431
+      duration: 0.0098473
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -537,7 +537,7 @@ MonoBehaviour:
       name: T08NoBall21Awarded
       fullName: ActionMasterTest.T08NoBall21Awarded
       resultStatus: 1
-      duration: 0.0100602
+      duration: 0.0092326
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -551,7 +551,7 @@ MonoBehaviour:
       name: T09Bowl20tidyadterStrike
       fullName: ActionMasterTest.T09Bowl20tidyadterStrike
       resultStatus: 1
-      duration: 0.0112073
+      duration: 0.0130455
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
@@ -564,14 +564,27 @@ MonoBehaviour:
     - id: '[Assembly-CSharp-Editor][ActionMasterTest.T10KD10PinsOnASecondBowlInAFrame]'
       name: T10KD10PinsOnASecondBowlInAFrame
       fullName: ActionMasterTest.T10KD10PinsOnASecondBowlInAFrame
-      resultStatus: 2
-      duration: 0.0163234
-      messages: "  Expected: 4\r\n  But was:  5\r\n"
+      resultStatus: 1
+      duration: 0.0132702
+      messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
         your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: "at ActionMasterTest.T10KD10PinsOnASecondBowlInAFrame () [0x0005c]
-        in F:\\repos\\MemeBowlingSVN\\MemeBowling\\Assets\\Editor\\ActionMasterTest.cs:118\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][ActionMasterTest.T12Dondi10thFrameTurkey]'
+      name: T12Dondi10thFrameTurkey
+      fullName: ActionMasterTest.T12Dondi10thFrameTurkey
+      resultStatus: 1
+      duration: 0.0099985
+      messages: 
+      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
+        is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+        your script can inherit from ScriptableObject or no base class at all\r\n"
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -580,7 +593,7 @@ MonoBehaviour:
       name: ScoreTest
       fullName: ScoreTest
       resultStatus: 1
-      duration: 0.0211447
+      duration: 0.0190684
       messages: 
       output: 
       stacktrace: 
@@ -592,7 +605,7 @@ MonoBehaviour:
       name: PassingTest
       fullName: ScoreTest.PassingTest
       resultStatus: 1
-      duration: 0.0049068
+      duration: 0.0049683
       messages: 
       output: 
       stacktrace: 
@@ -600,14 +613,14 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: "T10KD10PinsOnASecondBowlInAFrame (0.016s)\n---\nExpected: 4\r\n
-      \ But was:  5\n---\nat ActionMasterTest.T10KD10PinsOnASecondBowlInAFrame ()
-      [0x0005c] in F:\\repos\\MemeBowlingSVN\\MemeBowling\\Assets\\Editor\\ActionMasterTest.cs:118\n---\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all"
-    m_ResultStacktrace: "at ActionMasterTest.T10KD10PinsOnASecondBowlInAFrame () [0x0005c]
-      in F:\\repos\\MemeBowlingSVN\\MemeBowling\\Assets\\Editor\\ActionMasterTest.cs:118\r\n"
+    m_ResultText: 'T10KD10PinsOnASecondBowlInAFrame (0.013s)
+
+      ---
+
+      You are trying to create a MonoBehaviour using the ''new'' keyword.  This is
+      not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+      your script can inherit from ScriptableObject or no base class at all'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 9eba6c5b
@@ -657,10 +670,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 275
-    y: 92
-    width: 1021
-    height: 392
+    x: 244
+    y: 110
+    width: 816
+    height: 294
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -690,25 +703,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1021
-      height: 375
-    m_Scale: {x: 0.48828125, y: 0.48828125}
-    m_Translation: {x: 510.5, y: 187.5}
+      width: 816
+      height: 277
+    m_Scale: {x: 0.36067712, y: 0.3606771}
+    m_Translation: {x: 408, y: 138.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1045.504
+      x: -1131.2057
       y: -384
-      width: 2091.008
+      width: 2262.4114
       height: 768
     m_MinimalGUI: 1
-  m_defaultScale: 0.48828125
+  m_defaultScale: 0.3606771
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1021, y: 392}
+  m_LastWindowPixelSize: {x: 816, y: 294}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -732,14 +745,65 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 542
-    width: 1185
-    height: 260
+    x: 24
+    y: 546
+    width: 1036
+    height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
-    m_KeySerializationHelper: []
-    m_ValueSerializationHelper: []
+    m_KeySerializationHelper:
+    - {fileID: 1107395648551168032, guid: 37b6eac6c8e1e734ea2e47760c8ed150, type: 2}
+    - {fileID: 1107319646259722896, guid: 37b6eac6c8e1e734ea2e47760c8ed150, type: 2}
+    - {fileID: 1107099365583839642, guid: 37b6eac6c8e1e734ea2e47760c8ed150, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.7225
+      e01: 0
+      e02: 0
+      e03: 57.59247
+      e10: 0
+      e11: 0.7225
+      e12: 0
+      e13: 27.18
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.8190789
+      e01: 0
+      e02: 0
+      e03: -24.315704
+      e10: 0
+      e11: 0.8190789
+      e12: 0
+      e13: 7.5723724
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.8190789
+      e01: 0
+      e02: 0
+      e03: -24.315704
+      e10: 0
+      e11: 0.8190789
+      e12: 0
+      e13: 7.5723724
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 0}
   m_BreadCrumbs: []
@@ -774,15 +838,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 275
-    y: 505
-    width: 1021
-    height: 131
+    x: 244
+    y: 425
+    width: 816
+    height: 100
   m_PersistentViewDataDictionary: {fileID: 0}
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 0
+  m_LastSelectedObjectID: 12538
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -803,10 +867,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 657
-    width: 1296
-    height: 331
+    x: 24
+    y: 546
+    width: 1036
+    height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -820,19 +884,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\repos\MemeBowlingSVN\MemeBowling
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 082b0000
-    m_LastClickedID: 11016
+    m_SelectedIDs: 502d0000
+    m_LastClickedID: 11600
     m_ExpandedIDs: 00000000082b00004e2c0000a42c0000ee2c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -886,8 +950,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: fa300000
+    m_LastClickedInstanceID: 12538
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000a27000080280000202f0000b03f0000583f00007a3f00007e3f00008c4b0000542b0000bc2d000000000000
     m_RenameOverlay:
@@ -936,10 +1000,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1300
-    y: 91
-    width: 380
-    height: 897
+    x: 1064
+    y: 110
+    width: 304
+    height: 686
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -970,16 +1034,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 92
-    width: 271
-    height: 544
+    x: 24
+    y: 110
+    width: 216
+    height: 415
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c0090000
+    m_SelectedIDs: d82f0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 0047ffffe84cffff1250ffffa454ffff8c5afffff85dffffea6affff486effff7872ffffd875fffff07cffffc082ffff1a86ffffe08affffe492ffff4e99ffffdc9cffff30a0ffff18a4ffff60a7ffff32adffff00b1ffff48b7ffff7cbbffff14c3ffff40c6ffffa2cdffffd0d0ffff3ed3ffff64d3ffff24d7ffff7cdfffffdcebffff4cf2ffffeafbffff00000000
+    m_ExpandedIDs: 9ae8ffff90e9ffffeafbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -997,7 +1061,8 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
-  m_ExpandedScenes: []
+  m_ExpandedScenes:
+  - Game
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -1022,10 +1087,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 275
-    y: 92
-    width: 1021
-    height: 392
+    x: 244
+    y: 110
+    width: 816
+    height: 294
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 1264.0785870388386
