@@ -88,11 +88,22 @@ public class PinSetter : MonoBehaviour {
 
         ActionMaster.Action action = actionMaster.Bowl(pinFall);
 
-        if (action == ActionMaster.Action.Tidy) { animator.SetTrigger("tidyTrigger"); }
-        else if (action == ActionMaster.Action.EndTurn) { animator.SetTrigger("resetTrigger"); }
-        else if (action == ActionMaster.Action.Reset) { animator.SetTrigger("resetTrigger"); }
-        else if (action == ActionMaster.Action.EndGame) { throw new UnityException("Don't know how to handle end game yet"); }
+        Debug.Log("Pinfall " + pinFall + " " + action);
 
+        if (action == ActionMaster.Action.Tidy) {
+            animator.SetTrigger("tidyTrigger");
+        }
+        else if (action == ActionMaster.Action.EndTurn) {
+            animator.SetTrigger("resetTrigger");
+            lastSettledCount = 10;
+        }
+        else if (action == ActionMaster.Action.Reset) { 
+            animator.SetTrigger("resetTrigger");
+            lastSettledCount = 10;
+        }
+        else if (action == ActionMaster.Action.EndGame) {
+            throw new UnityException("Don't know how to handle end game yet");
+        }
 
         ballEnteredBox = false;
         ball.Restart();
@@ -124,7 +135,7 @@ public class PinSetter : MonoBehaviour {
     {
         if (numberOfStandingPins == 0)
         {
-            Instantiate(PinSet);
+            Instantiate(PinSet).transform.Translate(new Vector3(0, 50, 0), Space.World);
         }
     }
 }

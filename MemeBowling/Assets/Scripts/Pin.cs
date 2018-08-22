@@ -8,13 +8,14 @@ public class Pin : MonoBehaviour {
     Animator animator;
     Vector3 angels;
     Rigidbody rigidbody;
+    PinSetter pinSetter;
 
 
     // Use this for initialization
     void Start() {
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody>();
-
+        pinSetter = GameObject.FindObjectOfType<PinSetter>();
         angels = gameObject.transform.rotation.eulerAngles;
         //print(angels);
         //Invoke("printAngels", 5);
@@ -39,5 +40,15 @@ public class Pin : MonoBehaviour {
     {
         rigidbody.useGravity = false;
         animator.SetTrigger("pinGoUpTrigger");
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        print("Wyszedlem z triggera: " + other + " " + pinSetter);
+        if (other == pinSetter.GetComponent<Collider>())
+        {
+            print("umarlem");
+            Destroy(gameObject);
+        }
     }
 }
