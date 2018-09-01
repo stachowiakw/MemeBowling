@@ -4,20 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PinSetter : MonoBehaviour {
-    private Ball ball;
     public Text StandingPinsCounter;
-    private int numberOfStandingPins;
-    private bool ballEnteredBox;
+    
     public GameObject PinSet;
-
     public float timerCheck = 3f;
+
+    private Ball ball;
+    private int numberOfStandingPins;
+    private bool ballOutOfPlay = false;
     private int tempStandingPins;
     private float timer = 0;
-
     private int lastSettledCount = 10;
-
-    private ActionMaster actionMaster = new ActionMaster();
     private Animator animator;
+    ActionMaster actionMaster = new ActionMaster(); // we need it here as we want only 1 instance
 
     // Use this for initialization
     void Start()
@@ -29,9 +28,15 @@ public class PinSetter : MonoBehaviour {
     }
 
     // Update is called once per frame
+    public void SetBallOutOfPlay()
+    {
+        ballOutOfPlay = true;
+    }
+        
     void Update() {
-        if (ballEnteredBox)
+        if (ballOutOfPlay)
         {
+            StandingPinsCounter.color = Color.red;
             timer = timer + (1 * Time.deltaTime);
             if (timer <= timerCheck)
             {
@@ -105,19 +110,19 @@ public class PinSetter : MonoBehaviour {
             throw new UnityException("Don't know how to handle end game yet");
         }
 
-        ballEnteredBox = false;
+        ballOutOfPlay = false;
         ball.Restart();
         timer = 0;
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.GetComponent<Ball>())
-        {
-            ballEnteredBox = true;
-            StandingPinsCounter.color = Color.red;
-        }
-    }
+// OLD CODE
+ //   private void OnTriggerEnter(Collider other)
+ //   {
+ //       if (other.GetComponent<Ball>())
+ //       {
+ //           ballOutOfPlay = true;
+ //           StandingPinsCounter.color = Color.red;
+ //      }
+ //   }
 
     int countStandingPins()
     {
