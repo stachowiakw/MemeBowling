@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActionMaster : MonoBehaviour {
+public class ActionMaster {
     private int[] ResultOfBowl = new int[21];
     public int bowlIndex = 1;
 

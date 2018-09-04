@@ -43,6 +43,7 @@ public class Ball : MonoBehaviour {
         rigidbody.velocity = Vector3.zero;
         rigidbody.angularVelocity = Vector3.zero;
         transform.position = new Vector3(0, 30, 30);
+        transform.rotation = Quaternion.identity;
         ballLaunched = false;
         startingPositionButtons.SetActive(true);
     }
