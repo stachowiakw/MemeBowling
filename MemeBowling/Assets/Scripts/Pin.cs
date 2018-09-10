@@ -40,14 +40,15 @@ public class Pin : MonoBehaviour {
     {
         rigidbody.useGravity = false;
         animator.SetTrigger("pinGoUpTrigger");
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        print("Wyszedlem z triggera: " + other + " " + pinSetter);
+        print("Jestem PINEM i Wyszedlem z triggera: " + other + " " + pinSetter);
         if (other == pinSetter.GetComponent<Collider>())
         {
-            print("umarlem");
+            print("Jestem PINEM i już umarlem");
             Destroy(gameObject);
         }
     }

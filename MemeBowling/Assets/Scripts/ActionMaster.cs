@@ -20,7 +20,7 @@ public class ActionMaster {
         return currentAction;
     }
 
-    public Action Bowl (int pins)
+    private Action Bowl (int pins)
     {
         ResultOfBowl[bowlIndex - 1] = pins;
 

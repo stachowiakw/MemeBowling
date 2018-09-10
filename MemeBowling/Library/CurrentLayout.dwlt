@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -36,12 +36,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 200
+    x: 202
     y: 0
-    width: 889
+    width: 887
     height: 420
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -114,10 +114,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 200
+    width: 202
     height: 420
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -415,20 +415,6 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ActionMasterTest.T03EloEloMakrelo]'
-      name: T03EloEloMakrelo
-      fullName: ActionMasterTest.T03EloEloMakrelo
-      resultStatus: 1
-      duration: 0.0098883
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
     - id: '[Assembly-CSharp-Editor][ActionMasterTest.T04Bowl28SpareReturnsEndTurn]'
       name: T04Bowl28SpareReturnsEndTurn
       fullName: ActionMasterTest.T04Bowl28SpareReturnsEndTurn
@@ -462,90 +448,6 @@ MonoBehaviour:
       fullName: ActionMasterTest.T06CheckResetAtStrikeInLastFrame
       resultStatus: 1
       duration: 0.0096706
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ActionMasterTest.T07YoutubeRollsEndInEndGames]'
-      name: T07YoutubeRollsEndInEndGames
-      fullName: ActionMasterTest.T07YoutubeRollsEndInEndGames
-      resultStatus: 1
-      duration: 0.0153347
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ActionMasterTest.T08NoBall21Awarded]'
-      name: T08NoBall21Awarded
-      fullName: ActionMasterTest.T08NoBall21Awarded
-      resultStatus: 1
-      duration: 0.0114154
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ActionMasterTest.T09Bowl20tidyadterStrike]'
-      name: T09Bowl20tidyadterStrike
-      fullName: ActionMasterTest.T09Bowl20tidyadterStrike
-      resultStatus: 1
-      duration: 0.0101244
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ActionMasterTest.T10KD10PinsOnASecondBowlInAFrame]'
-      name: T10KD10PinsOnASecondBowlInAFrame
-      fullName: ActionMasterTest.T10KD10PinsOnASecondBowlInAFrame
-      resultStatus: 1
-      duration: 0.0111625
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ActionMasterTest.T12Dondi10thFrameTurkey]'
-      name: T12Dondi10thFrameTurkey
-      fullName: ActionMasterTest.T12Dondi10thFrameTurkey
-      resultStatus: 1
-      duration: 0.0102879
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ActionMasterTest.T13ZeroOneGivesEndTurn]'
-      name: T13ZeroOneGivesEndTurn
-      fullName: ActionMasterTest.T13ZeroOneGivesEndTurn
-      resultStatus: 1
-      duration: 0.0146177
       messages: 
       output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
         is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
@@ -742,9 +644,9 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 12}
-    m_SelectedIDs: f6270000
-    m_LastClickedID: 10230
-    m_ExpandedIDs: 00000000ec27000040280000522800006c28000000ca9a3bffffff7f
+    m_SelectedIDs: f8270000
+    m_LastClickedID: 10232
+    m_ExpandedIDs: 00000000ee27000044280000562800007028000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -772,7 +674,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ec27000040280000522800006c280000
+    m_ExpandedIDs: 00000000ee270000442800005628000070280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -885,7 +787,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 100
     y: 107
-    width: 198
+    width: 200
     height: 399
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
@@ -937,9 +839,9 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 302
+    x: 304
     y: 107
-    width: 885
+    width: 883
     height: 399
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
