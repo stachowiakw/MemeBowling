@@ -12,6 +12,7 @@ public class PinCounter : MonoBehaviour
     private float timer = 0;
     private PinSetter pinSetter;
     private GameManager gameManager;
+    private Ball ball;
     public float timerCheck = 3f;
     public Text StandingPinsCounter;
     public bool ballOutOfPlay = false;
@@ -21,12 +22,13 @@ public class PinCounter : MonoBehaviour
     {
         pinSetter = GameObject.FindObjectOfType<PinSetter>();
         gameManager = GameObject.FindObjectOfType<GameManager>();
+        ball = GameObject.FindObjectOfType<Ball>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (ballOutOfPlay == true)
+        if (ballOutOfPlay == true && ball.ballLaunched == true)
         {
             StandingPinsCounter.color = Color.red;
             timer = timer + (1 * Time.deltaTime);
