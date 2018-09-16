@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class PinSetter : MonoBehaviour {
     public GameObject PinSet;
     private Animator animator;
-    ActionMaster actionMaster = new ActionMaster(); // we need it here as we want only 1 instance
     private PinCounter pinCounter;
     private GameManager gameManager;
 
