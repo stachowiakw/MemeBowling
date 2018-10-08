@@ -32,5 +32,6 @@ public class GameManager : MonoBehaviour {
         }
         catch { Debug.LogWarning("Something went wrong in Bowl()"); }
         ball.Restart();
+        print("Poszedl bowl z upadnietymi: " + pinFall);
     }
 }

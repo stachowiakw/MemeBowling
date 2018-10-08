@@ -59,7 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ScoreDisplay.cs" />
     <Compile Include="Assets\Scripts\ActionMaster.cs" />
+    <Compile Include="Assets\Scripts\ActionMasterOLD.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\DragLunch.cs" />
@@ -71,11 +73,11 @@
     <Compile Include="Assets\Scripts\Shredder.cs" />
     <Compile Include="Assets\Scripts\Swiper.cs" />
     <Compile Include="Assets\Scripts\touchPanelScript.cs" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>F:/repos/MemeBowlingLast/MemeBowling/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>F:/repos/MemeBowlingLast/MemeBowling/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>F:/repos/MemeBowlingLast/MemeBowling/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>F:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

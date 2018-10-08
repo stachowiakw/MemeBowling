@@ -37,11 +37,15 @@ public class PinSetter : MonoBehaviour {
         print("LOWER_STARTED!");
         foreach (Pin Pinn in GameObject.FindObjectsOfType<Pin>())
         {
-            if (Pinn.isStillStanding())
+            if (!Pinn.isStillStanding())
+            {
+                Destroy(Pinn.gameObject); 
+            }
+            else if (Pinn.isStillStanding())
             {
                 Pinn.transform.Translate(new Vector3(0, -49, 0), Space.World);
-                Pinn.GetComponent<Rigidbody>().useGravity = true;
                 Pinn.GetComponent<Rigidbody>().freezeRotation = false;
+                Pinn.GetComponent<Rigidbody>().useGravity = true;
                 print("LOWERDED!");
             }
         }

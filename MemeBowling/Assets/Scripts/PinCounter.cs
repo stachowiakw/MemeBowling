@@ -42,6 +42,7 @@ public class PinCounter : MonoBehaviour
             }
             else
             {
+                ballOutOfPlay = false;
                 PinsHaveSettled();
             }
         }
@@ -79,8 +80,8 @@ public class PinCounter : MonoBehaviour
     {
         if (other.gameObject.name == "Ball")
         {
-            ballOutOfPlay = true;
             print("WYSZŁO SZYDŁO");
+            ballOutOfPlay = true;
         }
     }
 }
